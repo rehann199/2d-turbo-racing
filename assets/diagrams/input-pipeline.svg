@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+  <title id="t">Input to gameplay pipeline</title>
+  <desc id="d">Touch, tilt and key or D-pad input are normalised into one steering intent that feeds the delta-time gameplay loop, which drives a canvas painter and persistence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#101a36"/>
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e6ecff; }
+      .h { font-size: 24px; font-weight: 700; }
+      .k { font-size: 13px; fill: #7f93c9; letter-spacing: 1.5px; font-weight: 700; }
+      .b { font-size: 15px; }
+      .s { font-size: 13px; fill: #9fb0d9; }
+      .in  { fill: #12304a; stroke: #2f7fc1; stroke-width: 2; }
+      .tvb { fill: #3a2414; stroke: #d9822b; stroke-width: 2; }
+      .core { fill: #1a2a55; stroke: #5b78d6; stroke-width: 2; }
+      .out { fill: #14283a; stroke: #3aa7a0; stroke-width: 2; }
+      .arrow { stroke: #5b78d6; stroke-width: 2; fill: none; marker-end: url(#a); }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5b78d6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="420" rx="16" fill="url(#bg)"/>
+  <text x="40" y="48" class="h">Input → intent → simulation → output</text>
+
+  <rect x="40" y="80" width="230" height="64" rx="10" class="in"/>
+  <text x="58" y="108" class="b">Touch buttons</text><text x="58" y="130" class="s">Mobile · pointer down/up</text>
+  <rect x="40" y="160" width="230" height="64" rx="10" class="in"/>
+  <text x="58" y="188" class="b">Tilt steering</text><text x="58" y="210" class="s">Mobile · smoothed, calibrated</text>
+  <rect x="40" y="240" width="230" height="64" rx="10" class="tvb"/>
+  <text x="58" y="268" class="b">Remote / D-pad / keys</text><text x="58" y="290" class="s">TV (and keyboards)</text>
+
+  <rect x="340" y="110" width="240" height="160" rx="12" class="core"/>
+  <text x="360" y="140" class="k">INPUT LAYER</text>
+  <text x="360" y="170" class="b">Normalise to steering intent</text>
+  <text x="360" y="196" class="b">Mutual exclusion (L vs R)</text>
+  <text x="360" y="222" class="b">Stale-input release</text>
+  <text x="360" y="248" class="b">Focus recovery (TV)</text>
+
+  <rect x="650" y="110" width="240" height="160" rx="12" class="core"/>
+  <text x="670" y="140" class="k">GAMEPLAY LOOP</text>
+  <text x="670" y="170" class="b">Delta-time update</text>
+  <text x="670" y="196" class="b">Lane-based spawning</text>
+  <text x="670" y="222" class="b">Rect-overlap collision</text>
+  <text x="670" y="248" class="b">Fuel · power-ups · laps</text>
+
+  <rect x="960" y="80" width="200" height="64" rx="10" class="out"/>
+  <text x="978" y="108" class="b">Canvas painter</text><text x="978" y="130" class="s">Pre-decoded sprites</text>
+  <rect x="960" y="160" width="200" height="64" rx="10" class="out"/>
+  <text x="978" y="188" class="b">Audio + haptics</text><text x="978" y="210" class="s">Settings-aware</text>
+  <rect x="960" y="240" width="200" height="64" rx="10" class="out"/>
+  <text x="978" y="268" class="b">Persistence + sync</text><text x="978" y="290" class="s">Local first, cloud merge</text>
+
+  <path d="M270 112 C305 112 305 170 340 170" class="arrow"/>
+  <path d="M270 192 H340" class="arrow"/>
+  <path d="M270 272 C305 272 305 215 340 215" class="arrow"/>
+  <path d="M580 190 H650" class="arrow"/>
+  <path d="M890 160 C925 130 925 112 960 112" class="arrow"/>
+  <path d="M890 190 H960 " class="arrow"/>
+  <path d="M890 225 C925 250 925 272 960 272" class="arrow"/>
+  <text x="40" y="372" class="s">Diagram is an original illustration of the architecture, not a screenshot. Component names are conceptual.</text>
+</svg>

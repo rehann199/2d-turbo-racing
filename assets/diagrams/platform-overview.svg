@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">2D Turbo Racing platform overview</title>
+  <desc id="d">Two Flutter applications, Mobile and Android TV, sharing a common game design and cloud services while differing in input, ads and platform services.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#101a36"/>
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e6ecff; }
+      .h { font-size: 26px; font-weight: 700; }
+      .s { font-size: 15px; fill: #9fb0d9; }
+      .b { font-size: 16px; }
+      .k { font-size: 13px; fill: #7f93c9; letter-spacing: 1.5px; font-weight: 700; }
+      .box { fill: #16213f; stroke: #2c3f73; stroke-width: 1.5; }
+      .mob { fill: #12304a; stroke: #2f7fc1; stroke-width: 2; }
+      .tv  { fill: #3a2414; stroke: #d9822b; stroke-width: 2; }
+      .sh  { fill: #1a2a55; stroke: #5b78d6; stroke-width: 2; }
+      .cloud { fill: #14283a; stroke: #3aa7a0; stroke-width: 1.5; }
+      .arrow { stroke: #5b78d6; stroke-width: 2; fill: none; marker-end: url(#a); }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5b78d6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="16" fill="url(#bg)"/>
+  <text x="40" y="52" class="h">2D Turbo Racing — one game design, two platform apps</text>
+  <text x="40" y="78" class="s">Both apps are Flutter / Dart. They are maintained as separate applications with a shared lineage.</text>
+
+  <!-- Mobile -->
+  <rect x="40" y="110" width="340" height="270" rx="12" class="mob"/>
+  <text x="60" y="140" class="k">MOBILE APP</text>
+  <text x="60" y="168" class="b">Android + iOS · landscape</text>
+  <text x="60" y="198" class="b">Touch buttons or tilt steering</text>
+  <text x="60" y="226" class="b">Haptics · push notifications</text>
+  <text x="60" y="254" class="b">Ad mediation layer + remote gating</text>
+  <text x="60" y="282" class="b">Google / Apple sign-in</text>
+  <text x="60" y="310" class="b">Play Billing / StoreKit bridges</text>
+  <text x="60" y="338" class="b">In-app update · consent flow</text>
+
+  <!-- Shared -->
+  <rect x="430" y="110" width="340" height="270" rx="12" class="sh"/>
+  <text x="450" y="140" class="k">SHARED GAME DESIGN</text>
+  <text x="450" y="168" class="b">Canvas-rendered 2D racing loop</text>
+  <text x="450" y="196" class="b">10 tracks · 14 cars · 4 difficulty tiers</text>
+  <text x="450" y="224" class="b">Coins, gems, fuel, nitro, shield, magnet</text>
+  <text x="450" y="252" class="b">Daily rewards · limited-time offers</text>
+  <text x="450" y="280" class="b">Local progress + cloud save model</text>
+  <text x="450" y="308" class="b">Analytics event taxonomy</text>
+  <text x="450" y="336" class="b">Provider-based UI state</text>
+
+  <!-- TV -->
+  <rect x="820" y="110" width="340" height="270" rx="12" class="tv"/>
+  <text x="840" y="140" class="k">ANDROID TV APP</text>
+  <text x="840" y="168" class="b">Leanback launcher · landscape</text>
+  <text x="840" y="198" class="b">D-pad / remote / gamepad keys</text>
+  <text x="840" y="226" class="b">Focus-driven UI, no touch needed</text>
+  <text x="840" y="254" class="b">Focus watchdog + stale-key guard</text>
+  <text x="840" y="282" class="b">Constrained image-cache budget</text>
+  <text x="840" y="310" class="b">Ad SDKs wired for TV placements</text>
+  <text x="840" y="338" class="b">Focus telemetry (throttled)</text>
+
+  <path d="M380 245 H430" class="arrow"/>
+  <path d="M820 245 H770" class="arrow"/>
+
+  <!-- Cloud -->
+  <rect x="40" y="420" width="1120" height="100" rx="12" class="cloud"/>
+  <text x="60" y="450" class="k">CLOUD AND PLATFORM SERVICES (BOTH APPS)</text>
+  <text x="60" y="482" class="b">Firebase Auth · Cloud Firestore · Analytics · Crashlytics</text>
+  <text x="60" y="506" class="s">Remote offer catalog and ad-placement config are read from Firestore; user saves are per-account.</text>
+  <path d="M210 380 V420" class="arrow"/>
+  <path d="M600 380 V420" class="arrow"/>
+  <path d="M990 380 V420" class="arrow"/>
+</svg>
