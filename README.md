@@ -27,6 +27,13 @@ Flutter · Dart · Firebase · Custom Canvas Rendering (no game engine)
 
 ---
 
+## Get the Game
+
+<p>
+  <a href="https://play.google.com/store/apps/details?id=co.futurewatch.turborg2d.racing&hl=en"><img alt="Get it on Google Play" src="https://img.shields.io/badge/Google%20Play-Get%20the%20game-414141?style=for-the-badge&logo=googleplay&logoColor=white" /></a>
+  <a href="https://apps.apple.com/au/app/turbo-racing-arcade-car-game/id6764758733"><img alt="Download on the App Store" src="https://img.shields.io/badge/App%20Store-Download-0D96F6?style=for-the-badge&logo=apple&logoColor=white" /></a>
+</p>
+
 ## Product at a Glance
 
 | | |
