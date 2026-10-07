@@ -14,6 +14,8 @@ Flutter · Dart · Firebase · Custom Canvas Rendering (no game engine)
 ![iOS](https://img.shields.io/badge/iOS-000000?logo=apple&logoColor=white)
 ![Android TV](https://img.shields.io/badge/Android%20TV-D9822B?logo=androidtv&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![Downloads](https://img.shields.io/badge/Google%20Play-10K%2B%20downloads-3DDC84?logo=googleplay&logoColor=white)
+![For sale](https://img.shields.io/badge/Product-For%20sale-7C4DFF)
 
 <table>
   <tr>
@@ -31,8 +33,17 @@ Flutter · Dart · Firebase · Custom Canvas Rendering (no game engine)
 
 <p>
   <a href="https://play.google.com/store/apps/details?id=co.futurewatch.turborg2d.racing&hl=en"><img alt="Get it on Google Play" src="https://img.shields.io/badge/Google%20Play-Get%20the%20game-414141?style=for-the-badge&logo=googleplay&logoColor=white" /></a>
-  <a href="https://apps.apple.com/au/app/turbo-racing-arcade-car-game/id6764758733"><img alt="Download on the App Store" src="https://img.shields.io/badge/App%20Store-Download-0D96F6?style=for-the-badge&logo=apple&logoColor=white" /></a>
+  <a href="https://apps.apple.com/pk/app/turbo-racing-arcade-car-game/id6764758733"><img alt="Download on the App Store" src="https://img.shields.io/badge/App%20Store-Download-0D96F6?style=for-the-badge&logo=apple&logoColor=white" /></a>
 </p>
+
+<!-- fw-sale:start -->
+## Reach & Availability
+
+| | |
+|---|---|
+| **Google Play downloads** | **10K+** (the count shown on the Play listing) |
+| **Product sale** | This is a Future Watch product and it is **available to buy or license** for your own business. [Ask about buying 2D Turbo Racing](https://futurewatch.co/contact?type=product&ref=2d-turbo-racing) or email [rehan@futurewatch.co](mailto:rehan@futurewatch.co). |
+<!-- fw-sale:end -->
 
 ## Product at a Glance
 
